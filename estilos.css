@@ -1,0 +1,1191 @@
+/* ==========================================
+   1. REGISTRO DE TIPOGRAFÍAS (OFFLINE)
+   ========================================== */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fuentes/cinzel-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fuentes/cinzel-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ==========================================
+   2. ESTILOS GENERALES Y FONDO
+   ========================================== */
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url('Imagenes/fondoinicio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centrado global para header, nav, h2, footer */
+header, nav, footer {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #000000, -2px -2px 8px #000000, 0 0 15px #000000;
+}
+
+.logo-titulo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 15px;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5)); 
+}
+
+hr {
+    border: 1px solid rgba(0, 85, 255, 0.4);
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* ==========================================
+   3. BARRA DE BÚSQUEDA
+   ========================================== */
+input[type="text"] {
+    width: 55%;
+    padding: 14px 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.6); 
+    border: 1px solid #d4af37; 
+    border-radius: 25px; 
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.8), 0 4px 15px rgba(0,0,0,0.5);
+    transition: all 0.4s ease; 
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    background-color: rgba(20, 15, 30, 0.85); 
+    border-color: #ffffff; 
+    width: 65%;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.9), 0 0 20px rgba(0, 100, 255, 0.5); 
+}
+
+/* ==========================================
+   4. BOTONES MÍSTICOS (NAVEGACIÓN)
+   ========================================== */
+nav table {
+    width: 85%;
+    margin: 30px auto;
+    background-color: transparent; 
+    border: none; 
+    border-collapse: separate;
+    border-spacing: 20px; 
+}
+
+nav td {
+    background-color: rgba(15, 15, 15, 0.75); 
+    border: 1px solid #d4af37;
+    padding: 18px;
+    text-align: center;
+    border-radius: 30px 70px 70px 30px / 30px 30px 70px 70px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease; 
+}
+
+nav a {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+nav td:hover {
+    background-color: rgba(30, 20, 40, 0.85); 
+    border-color: #ffffff; 
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 100, 255, 0.6); 
+    cursor: pointer;
+}
+
+/* ==========================================
+   5. SECCIÓN DE INICIO (PERGAMINO INTRO)
+   ========================================== */
+#inicio table {
+    width: 85%;
+    margin: 40px auto;
+    background-color: rgba(12, 12, 14, 0.85); 
+    border: 4px double rgba(212, 175, 55, 0.4); 
+    border-radius: 60px 20px 60px 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+#inicio td {
+    padding: 40px 50px;
+    color: #f5f2eb;
+    line-height: 1.8; 
+}
+
+#inicio h1 {
+    font-size: 2.2em;
+    color: #d4af37; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #f5f2eb, #d4af37, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #000000) drop-shadow(0px 4px 10px #000000) drop-shadow(0px 0px 20px #000000);
+}
+
+#inicio h2 {
+    font-size: 1.4em;
+    color: #e0d0b0; 
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#inicio p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+#inicio hr {
+    border: none;                
+    height: 2px;                
+    background-color: #d4af37;
+    width: 85%;                  
+    margin: 30px auto;          
+    display: block;             
+}
+
+/* ==========================================
+   6. TÍTULOS MÍSTICOS Y PERGAMINOS (GLOBALES)
+   ========================================== */
+h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(to right, #f5f2eb, #d4af37, #0055ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #000000) drop-shadow(0px 4px 10px #000000) drop-shadow(0px 0px 20px #000000);
+}
+
+.subtitulo-elementos {
+    font-size: 1.15em;
+    color: #f5f2eb;
+    font-style: italic;
+    max-width: 65%;
+    margin: 20px auto 35px auto; 
+    line-height: 1.7;
+    background-color: rgba(10, 10, 12, 0.65);
+    padding: 15px 30px;
+    border-radius: 15px; 
+    border: 2px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px #000000;
+}
+
+/* ==========================================
+   7. ALQUIMIA 3D: CARTAS DE TAROT ELEMENTALES
+   ========================================== */
+.contenedor-cartas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.carta {
+    background-color: transparent;
+    width: 220px;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.cara-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.carta:hover .cara-interna {
+    transform: rotateY(180deg);
+}
+
+.cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.atras {
+    background-color: #0f0f12;
+    border: 3px double #d4af37;
+}
+
+.imagen-elementos, .imagen-elemento {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.atras h3 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+}
+
+.adelante {
+    background-color: rgba(20, 20, 25, 0.95); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f5f2eb; 
+    transform: rotateY(180deg); 
+}
+
+.adelante b {
+    font-size: 1.2em;
+    color: #d4af37;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.adelante p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Resplandores y bordes elementales */
+.celda-fuego { box-shadow: 0 0 15px rgba(255, 51, 51, 0.6), inset 0 0 10px rgba(255, 51, 51, 0.3); border-color: #ff3333; }
+.celda-agua { box-shadow: 0 0 15px rgba(51, 119, 255, 0.6), inset 0 0 10px rgba(51, 119, 255, 0.3); border-color: #3377ff; }
+.celda-aire { box-shadow: 0 0 15px rgba(240, 240, 240, 0.5), inset 0 0 10px rgba(240, 240, 240, 0.2); border-color: #aaaaaa; }
+.celda-tierra { box-shadow: 0 0 15px rgba(51, 170, 85, 0.6), inset 0 0 10px rgba(51, 170, 85, 0.3); border-color: #33aa55; }
+
+.carta:hover .celda-fuego { box-shadow: 0 0 25px rgba(255, 51, 51, 0.95), inset 0 0 15px rgba(255, 51, 51, 0.5); }
+.carta:hover .celda-agua { box-shadow: 0 0 25px rgba(51, 119, 255, 0.95), inset 0 0 15px rgba(51, 119, 255, 0.5); }
+.carta:hover .celda-aire { box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.4); }
+.carta:hover .celda-tierra { box-shadow: 0 0 25px rgba(51, 170, 85, 0.95), inset 0 0 15px rgba(51, 170, 85, 0.5); }
+
+/* Tarjetas dinámicas */
+.rejilla-dinamicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta-dinamica {
+    background: linear-gradient(145deg, rgba(20, 20, 25, 0.9), rgba(10, 10, 15, 0.9));
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.icono-dinamica { font-size: 2em; margin-bottom: 10px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5)); }
+.tarjeta-dinamica h4 { color: #f5f2eb; font-size: 1.15em; margin-bottom: 12px; letter-spacing: 0.5px; }
+.sub-dinamica { display: block; color: #d4af37; font-size: 0.75em; text-transform: uppercase; margin-top: 4px; font-weight: normal; letter-spacing: 1px; }
+.tarjeta-dinamica p { color: rgba(245, 242, 235, 0.75); font-size: 0.9em; line-height: 1.5; margin: 0; }
+.tarjeta-dinamica:hover { transform: translateY(-5px); border-color: #d4af37; box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15); background: linear-gradient(145deg, rgba(25, 25, 30, 0.95), rgba(15, 15, 20, 0.95)); }
+
+/* ==========================================
+   8. REPISA MÍSTICA Y LIBROS (NUEVO)
+   ========================================== */
+.linea-separadora { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, #d4af37, transparent); margin: 10px auto 25px auto; }
+.instruccion-biblioteca { margin-top: 30px; margin-bottom: 10px; text-align: center; }
+.instruccion-biblioteca p { color: rgba(212, 175, 55, 0.85) !important; font-size: 0.95em !important; letter-spacing: 0.5px; }
+
+.biblioteca-mistica { width: 100%; margin: 40px 0; padding-bottom: 20px; }
+.repisa-madera {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 30px 20px 0 20px;
+    background: rgba(10, 10, 12, 0.4);
+    border-radius: 8px;
+    position: relative;
+    border-bottom: 24px solid #3d2314;
+    box-shadow: 0 4px 0 #2b180e, inset 0 -2px 5px rgba(255,255,255,0.1), 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+.repisa-madera::after {
+    content: '';
+    position: absolute;
+    bottom: -24px; left: 0; width: 100%; height: 24px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, transparent 50%, rgba(0,0,0,0.15) 100%);
+    pointer-events: none;
+}
+
+.libro-tratado {
+    text-decoration: none;
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: bottom center;
+    z-index: 2;
+}
+.libro-tratado:hover { transform: translateY(-15px) scale(1.03); z-index: 10; }
+
+.lomo-libro {
+    width: 140px; height: 230px; padding: 20px 12px;
+    box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+    text-align: center; font-family: 'Cinzel', serif;
+    border-radius: 6px 12px 12px 6px;
+    box-shadow: inset 18px 0 20px rgba(255, 255, 255, 0.08), inset -18px 0 20px rgba(0, 0, 0, 0.6), 3px 0 8px rgba(0,0,0,0.4);
+    position: relative; border-left: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+}
+.lomo-libro::before {
+    content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent 15%, rgba(0,0,0,0.4) 16%, rgba(255,255,255,0.05) 17%, transparent 18%, transparent 45%, rgba(0,0,0,0.4) 46%, rgba(255,255,255,0.05) 47%, transparent 48%, transparent 80%, rgba(0,0,0,0.4) 81%, rgba(255,255,255,0.05) 82%, transparent 83%);
+    pointer-events: none;
+}
+.icono-tratado { font-size: 1.6em; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)); margin-top: 5px; }
+.titulo-lomo {
+    writing-mode: horizontal-tb; text-orientation: mixed; transform: none;
+    font-size: 0.85em; color: #f5f2eb; margin: 15px 0 auto 0; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 1px; width: 100%; line-height: 1.3; text-shadow: 0 2px 3px rgba(0,0,0,0.8); display: block;
+}
+.lomo-libro small { color: rgba(212, 175, 55, 0.95); font-size: 0.6em; font-weight: bold; text-transform: uppercase; letter-spacing: 0.10px; margin-bottom: 5px; line-height: 1.2; display: block; width: 100%; }
+
+/* Texturas de cuero */
+.lomo-oro { background: linear-gradient(90deg, #16161a 0%, #24242e 50%, #0d0d10 100%); border-top: 3px solid #d4af37; border-bottom: 3px solid #d4af37; }
+.lomo-oro .icono-tratado { filter: drop-shadow(0 0 4px #d4af37); }
+.lomo-madera { background: linear-gradient(90deg, #2c1a10 0%, #442919 50%, #1e110a 100%); border-top: 3px solid #8b5a2b; border-bottom: 3px solid #8b5a2b; }
+.lomo-papiro { background: linear-gradient(90deg, #8a8475 0%, #bdae93 50%, #666155 100%); border-top: 3px solid #f5f2eb; border-bottom: 3px solid #f5f2eb; }
+.lomo-papiro .titulo-lomo { color: #1c1a16; }
+.lomo-papiro small { color: rgba(0, 0, 0, 0.6); }
+.lomo-sangre { background: linear-gradient(90deg, #3d0c0c 0%, #661717 50%, #240707 100%); border-top: 3px solid #ff4444; border-bottom: 3px solid #ff4444; }
+.lomo-metal { background: linear-gradient(90deg, #0f2329 0%, #1a3c47 50%, #0a171b 100%); border-top: 3px solid #00cccc; border-bottom: 3px solid #00cccc; }
+
+/* ==========================================
+   9. VENTANAS MODALES (UNIFICADAS)
+   ========================================== */
+.ventana-modal {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px);
+    z-index: 9999; display: flex; justify-content: center; align-items: center;
+    opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+}
+.ventana-modal:target { opacity: 1; pointer-events: auto; }
+.ventana-modal:target .contenido-modal { transform: scale(1); }
+
+.contenido-modal {
+    background: linear-gradient(145deg, rgba(20, 20, 25, 0.98), rgba(10, 10, 15, 0.98));
+    border: 2px solid #d4af37; border-radius: 20px; padding: 40px;
+    max-width: 580px; width: 90%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.15);
+    position: relative; text-align: left; transform: scale(0.8);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cerrar-modal {
+    position: absolute; top: 15px; right: 20px; font-size: 2em; color: #e0d0b0;
+    text-decoration: none; transition: color 0.3s ease; line-height: 1;
+}
+.cerrar-modal:hover { color: #ff4d4d; }
+
+.contenido-modal h3 { margin-top: 0; color: #d4af37 !important; font-size: 1.8em; letter-spacing: 1px; }
+.contenido-modal p { color: #ffffff !important; line-height: 1.7; font-size: 1.05em; margin-bottom: 15px; }
+.contenido-modal p strong { color: #d4af37 !important; }
+.formula-modal { color: #ffffff !important; font-style: italic; background-color: rgba(212, 175, 55, 0.12); padding: 12px 18px; border-radius: 8px; border-left: 4px solid #d4af37; margin-bottom: 25px; }
+.formula-modal strong { color: #d4af37 !important; }
+.contenido-modal blockquote { margin: 20px 0 0 0; padding-left: 15px; border-left: 3px dashed rgba(43, 24, 16, 0.4); font-style: italic; color: #CF9FFF; font-size: 0.9em; }
+
+/* ==========================================
+   10. MESA DE ALQUIMIA: SLIDER DE GEMAS
+   ========================================== */
+.contenedor-cofre-alquimia {
+    display: flex; align-items: center; justify-content: center; position: relative;
+    max-width: 900px; margin: 50px auto 90px auto;
+    background: linear-gradient(145deg, rgba(18, 18, 24, 0.95), rgba(7, 7, 10, 0.98));
+    border: 2px solid #d4af37; border-radius: 20px; padding: 30px 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(212, 175, 55, 0.05);
+}
+.ventana-slider-alquimia { overflow-x: auto; overflow-y: hidden; width: 100%; padding: 20px 0 40px 0; scroll-behavior: smooth; scrollbar-width: none; }
+.ventana-slider-alquimia::-webkit-scrollbar { display: none; }
+.carrete-gemas { display: flex; gap: 40px; padding: 0 20px; }
+
+.frasco-alquimista {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative; text-decoration: none; cursor: pointer; width: 100px; height: 100px; flex-shrink: 0;
+}
+.gema-imagen { width: 100%; height: 100%; object-fit: contain; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease; filter: drop-shadow(0 10px 8px rgba(0,0,0,0.6)); }
+
+/* Estilo base del nombre del color */
+.nombre-color {
+    position: absolute; bottom: -35px; font-family: 'Cinzel', serif; font-size: 0.85em;
+    color: #e0d0b0; text-transform: uppercase; letter-spacing: 2px; white-space: nowrap;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9); transition: color 0.3s ease;
+}
+
+/* Hover general y resplandores individuales */
+.frasco-alquimista:hover .gema-imagen { transform: scale(1.18) translateY(-8px); }
+.frasco-alquimista:hover .nombre-color { color: #ffffff; }
+
+.frasco-alquimista:nth-child(1):hover .gema-imagen { filter: drop-shadow(0 0 20px rgba(255,255,255,0.8)); }
+.frasco-alquimista:nth-child(2):hover .gema-imagen { filter: drop-shadow(0 0 20px #ff3333); }
+.frasco-alquimista:nth-child(3):hover .gema-imagen { filter: drop-shadow(0 0 20px #3399ff); }
+.frasco-alquimista:nth-child(4):hover .gema-imagen { filter: drop-shadow(0 0 20px #ffe600); }
+.frasco-alquimista:nth-child(5):hover .gema-imagen { filter: drop-shadow(0 0 20px #2edb49); }
+.frasco-alquimista:nth-child(6):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(110, 60, 180, 0.6)) drop-shadow(0 0 10px rgba(0,0,0,0.9)); }
+.frasco-alquimista:nth-child(7):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(255, 120, 30, 0.85)); }
+.frasco-alquimista:nth-child(8):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(180, 50, 255, 0.85)); }
+.frasco-alquimista:nth-child(9):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(160, 175, 190, 0.75)); }
+.frasco-alquimista:nth-child(10):hover .gema-imagen { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.9)); }
+.frasco-alquimista:nth-child(11):hover .gema-imagen { filter: drop-shadow(0 0 20px rgba(192, 192, 192, 0.8)); }
+.frasco-alquimista:nth-child(12):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(64, 224, 208, 0.85)); }
+.frasco-alquimista:nth-child(13):hover .gema-imagen { filter: drop-shadow(0 0 18px rgba(139, 69, 19, 0.75)); }
+
+/* Escalas individuales (Tamaño base sin hover) */
+.frasco-alquimista:nth-child(1) .gema-imagen { transform: scale(1.5); }
+.frasco-alquimista:nth-child(2) .gema-imagen { transform: scale(1.2); }
+.frasco-alquimista:nth-child(3) .gema-imagen { transform: scale(1.4); }
+.frasco-alquimista:nth-child(4) .gema-imagen { transform: scale(1.2); }
+.frasco-alquimista:nth-child(5) .gema-imagen { transform: scale(1.1); }
+.frasco-alquimista:nth-child(6) .gema-imagen { transform: scale(1.1); }
+.frasco-alquimista:nth-child(7) .gema-imagen { transform: scale(1.29); }
+.frasco-alquimista:nth-child(8) .gema-imagen { transform: scale(1.1); }
+.frasco-alquimista:nth-child(9) .gema-imagen { transform: scale(1.20); }
+.frasco-alquimista:nth-child(10) .gema-imagen { transform: scale(1.2); }
+.frasco-alquimista:nth-child(11) .gema-imagen { transform: scale(1.1); }
+.frasco-alquimista:nth-child(12) .gema-imagen { transform: scale(1.7); }
+.frasco-alquimista:nth-child(13) .gema-imagen { transform: scale(1.4); }
+
+/* Flechas místicas */
+.flecha-alquimia { background-size: contain; background-repeat: no-repeat; background-position: center; background-color: transparent; border: none; width: 60px; height: 60px; cursor: pointer; z-index: 10; transition: all 0.3s ease; filter: drop-shadow(0 5px 5px rgba(0,0,0,0.5)); opacity: 0.8; }
+.flecha-izq img { width: 100%; height: auto; object-fit: contain; transform: scale(1.25); filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.9)); transition: filter 0.3s ease, transform 0.3s ease; }
+.flecha-izq:hover img { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 1)); transform: scale(1.45); }
+.flecha-der img { width: 100%; height: auto; object-fit: contain; transform: scale(1.0); filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.9)); transition: filter 0.3s ease, transform 0.3s ease; }
+.flecha-der:hover img { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 1)); transform: scale(1.35); }
+
+#Seccion-Colores { margin-bottom: 90px; }
+
+/* ==========================================
+   11. CINTA DE NÚMEROS INFINITA
+   ========================================== */
+#Seccion-Numeros { margin-bottom: 100px; }
+.ventana-cinta {
+    width: 80%; max-width: 850px; height: 480px; margin: 40px auto;
+    background: linear-gradient(145deg, rgba(15, 15, 20, 0.95), rgba(8, 8, 10, 0.95));
+    border: 3px double #d4af37; border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9), inset 0 0 25px rgba(0,0,0,0.8);
+    overflow: hidden; position: relative;
+}
+.ventana-cinta::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 40px; background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent); z-index: 10; pointer-events: none; }
+.ventana-cinta::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); z-index: 10; pointer-events: none; }
+.cinta-movimiento { display: flex; flex-direction: column; animation: pergaminoInfinito 30s linear infinite; }
+.ventana-cinta:hover .cinta-movimiento { animation-play-state: paused; }
+
+.tabla-numeros { display: flex; flex-direction: column; gap: 15px; padding: 20px 35px; }
+.fila-numero { display: flex; align-items: center; background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 12px; padding: 15px 25px; transition: all 0.3s ease; }
+.fila-numero:hover { background-color: rgba(212, 175, 55, 0.06); border-color: #d4af37; transform: scale(1.01); }
+.celda-digito { font-size: 2.5em; font-weight: bold; color: #d4af37; width: 80px; text-align: center; text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); font-family: 'Cinzel', serif; }
+.celda-info { flex: 1; padding-left: 20px; border-left: 1px solid rgba(255,255,255,0.1); text-align: left; }
+.celda-info h4 { margin: 0 0 8px 0; font-size: 1.25em; color: #ffffff; letter-spacing: 1px; }
+.celda-info h4 em { color: #e0d0b0; font-size: 0.9em; }
+.celda-info p { margin: 4px 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.5; }
+.celda-info p strong { color: #d4af37; }
+
+@keyframes pergaminoInfinito {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+/* ==========================================
+   12. MESA DIVIDIDA (INTERRUPTORES CSS)
+   ========================================== */
+.mesa-dividida-container { display: flex; max-width: 1500px; height: 550px; margin: 20px auto; background: rgba(13, 13, 19, 0.85); border: 1px solid rgba(200, 175, 55, 0.3); border-radius: 15px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
+.columna-grimorio { flex: 1; background-color: rgba(12, 12, 14, 0.4); padding: 20px 40px 40px 40px; border-right: 1px solid rgba(212, 175, 55, 0.2); overflow-y: auto; height: 100%; }
+.pergamino-fijo h2 { font-family: 'Cinzel', serif; color: #d4af37; font-size: 1.8em; margin-top: 0; margin-bottom: 15px; }
+.introduccion-oraculo { color: #b0a080; font-style: italic; line-height: 1.6; margin-bottom: 30px; }
+.leyes-oro { list-style: none; padding: 0; }
+.leyes-oro li { color: #e0d0b0; margin-bottom: 20px; line-height: 1.6; position: relative; padding-left: 20px; }
+.leyes-oro li::before { content: "✦"; position: absolute; left: 0; color: #d4af37; }
+
+.columna-tablero { flex: 1.2; display: flex; padding: 30px; background: transparent; position: relative; }
+input[name="tirada-selector"] { display: none; }
+
+.bloque-izquierdo-tablero { display: flex; flex-direction: column; width: 230px; flex-shrink: 0; gap: 20px; border-right: 1px solid rgba(255,255,255,0.05); padding-right: 20px; }
+.menu-vertical-tarot { display: flex; flex-direction: column; gap: 15px; width: 100%; }
+.boton-mistico { padding: 15px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(212, 175, 55, 0.2); color: #a0a0b0; border-radius: 8px; cursor: pointer; font-family: 'Cinzel', serif; font-size: 0.9em; transition: all 0.3s ease; text-align: left; }
+.boton-mistico:hover { background: rgba(212, 175, 55, 0.1); color: #fff; border-color: #d4af37; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+
+.zona-contrastes-abajo { position: relative; background: rgba(0, 0, 0, 0.4); border-radius: 8px; padding: 15px; border-left: 3px solid #d4af37; min-height: 150px; }
+.contraste-dinamico p { margin: 0 0 10px 0; line-height: 1.4; }
+.evita { color: #ff6b6b; }
+.ideal { color: #6be698; }
+
+.zona-revelacion { flex-grow: 1; padding-left: 20px; position: relative; height: 100%; }
+.contraste-dinamico, .contenido-tirada { display: none; opacity: 0; transform: translateY(10px); transition: opacity 0.4s ease, transform 0.4s ease; }
+.esquema-cartas { color: #cccccc; line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px; height: calc(100% - 40px); }
+.foto-posicion-tarot { width: 100%; max-width: 420px; max-height: 200px; object-fit: contain; margin: 10px auto 0 auto; border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 10px 20px rgba(0,0,0,0.6); display: block; }
+
+/* Lógica de selección */
+#tab-duda:checked ~ .bloque-izquierdo-tablero .btn-duda,
+#tab-encrucijada:checked ~ .bloque-izquierdo-tablero .btn-encrucijada,
+#tab-vinculos:checked ~ .bloque-izquierdo-tablero .btn-vinculos,
+#tab-alma:checked ~ .bloque-izquierdo-tablero .btn-alma { background: #d4af37; color: #000; font-weight: bold; }
+
+#tab-duda:checked ~ .bloque-izquierdo-tablero .c-duda,
+#tab-duda:checked ~ .zona-revelacion .contenido-duda,
+#tab-encrucijada:checked ~ .bloque-izquierdo-tablero .c-encrucijada,
+#tab-encrucijada:checked ~ .zona-revelacion .contenido-encrucijada,
+#tab-vinculos:checked ~ .bloque-izquierdo-tablero .c-vinculos,
+#tab-vinculos:checked ~ .zona-revelacion .contenido-vinculos,
+#tab-alma:checked ~ .bloque-izquierdo-tablero .c-alma,
+#tab-alma:checked ~ .zona-revelacion .contenido-alma { display: block; opacity: 1; transform: translateY(0); }
+
+/* ==========================================
+   ESTILOS ESPECÍFICOS PARA LA AGENDA
+   ========================================== */
+.agenda-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(12, 12, 14, 0.85);
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+}
+
+.agenda-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f5f2eb;
+    font-size: 0.95em;
+}
+
+.agenda-tabla th {
+    background: rgba(212, 175, 55, 0.2);
+    border-bottom: 2px solid #d4af37;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+}
+
+.agenda-tabla td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.hora-col {
+    color: #d4af37;
+    font-weight: bold;
+    border-right: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.disponible {
+    color: #6be698;
+    font-weight: bold;
+}
+
+.ocupado {
+    color: #ff6b6b;
+    font-weight: bold;
+    background: rgba(255, 107, 107, 0.05);
+}
+
+.nota-importante {
+    text-align: center;
+    color: #e0d0b0;
+    font-style: italic;
+    margin-top: 20px;
+    border-top: 1px solid rgba(212,175,55,0.3);
+    padding-top: 15px;
+}
+
+/* ==========================================
+   ESTILOS ESPECÍFICOS PARA EL TEMPLO DEL SABER
+   ========================================== */
+/* ==========================================
+   CARTAS DE ARCANOS (GIRO VERTICAL)
+   ========================================== */
+
+.arcano-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(10, 10, 14, 0.3);
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: border-color 0.3s;
+}
+
+.arcano-container:hover {
+    border-color: #d4af37;
+}
+
+.carta-vertical {
+    width: 200px;
+    height: 280px;
+    perspective: 1200px;
+    flex-shrink: 0;
+}
+
+.carta-vertical .cara-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+/* Giro vertical (eje X) */
+.arcano-container:hover .carta-vertical .cara-interna {
+    transform: rotateX(180deg);
+}
+
+.carta-vertical .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Anverso */
+.carta-vertical .adelante {
+    background: rgba(15, 15, 20, 0.95);
+    border: 2px solid #d4af37;
+    transform: rotateX(0deg);
+}
+
+/* Reverso (sin compensación, así la imagen quedará invertida al girar) */
+.carta-vertical .atras {
+    background: rgba(15, 15, 20, 0.95);
+    border: 2px solid #d4af37;
+    transform: rotateX(0deg);
+}
+
+/* Imagen (tamaño y ajuste) */
+.imagen-arcano {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Imagen dentro del reverso (opcional: si quieres invertirla aún más) */
+.imagen-arcano.atras {
+    /* Aquí puedes agregar transform: rotateX(180deg) si quieres que la imagen aparezca derecha */
+    /* Pero para que quede invertida, no pongas nada (ya hereda el giro de la carta) */
+}
+
+/* Texto externo */
+.texto-arcano {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    color: #f5f2eb;
+    line-height: 1.6;
+}
+
+.texto-arcano h3 {
+    color: #d4af37;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.texto-derecho,
+.texto-reves {
+    transition: opacity 0.4s ease;
+}
+
+.texto-reves {
+    display: none;
+}
+
+.arcano-container:hover .texto-derecho {
+    display: none;
+}
+
+.arcano-container:hover .texto-reves {
+    display: block;
+}
+
+/* ==========================================
+   CONSEJOS PRÁCTICOS (GRID DE TARJETAS)
+   ========================================== */
+
+.consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.tarjeta-consejo {
+    background: rgba(15, 15, 20, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-consejo:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.tarjeta-consejo h3 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.tarjeta-consejo p {
+    color: #f5f2eb;
+    line-height: 1.6;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.tarjeta-consejo p strong {
+    color: #d4af37;
+}
+
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA LA PÁGINA "El Templo del Saber"
+   ========================================== */
+
+body.pagina-biblioteca {
+    background-image: url('Imagenes/fondo5.jpg') !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.pagina-biblioteca nav td {
+    border-color: #cc99ff !important;
+    background-color: rgba(10, 10, 14, 0.6) !important;
+}
+
+body.pagina-biblioteca nav td:hover {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(204, 153, 255, 0.6) !important;
+}
+
+body.pagina-biblioteca h2 {
+    background: linear-gradient(to right, #ffffff, #cc99ff, #d4af37) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+body.pagina-biblioteca .carta-vertical .cara {
+    border-color: rgba(204, 153, 255, 0.3) !important;  /* Borde lila suave en la carta */
+}
+
+body.pagina-biblioteca .arcano-container:hover .carta-vertical .cara {
+    border-color: #cc99ff !important;                   /* Borde lila brillante al hover */
+    box-shadow: 0 0 25px rgba(204, 153, 255, 0.6) !important; /* Resplandor morado alrededor de la carta */
+}
+
+/* Opcional: si quieres que el resplandor sea aún más intenso */
+body.pagina-biblioteca .arcano-container:hover .carta-vertical .cara.adelante {
+    box-shadow: 0 0 30px rgba(204, 153, 255, 0.7) !important;
+}
+body.pagina-biblioteca .arcano-container:hover .carta-vertical .cara.atras {
+    box-shadow: 0 0 30px rgba(204, 153, 255, 0.7) !important;
+}
+
+/* Modal de consejos – fondo morado suave */
+body.pagina-biblioteca #modal-consejos .contenido-modal {
+    background: linear-gradient(145deg, rgba(50, 20, 60, 0.98), rgba(30, 10, 40, 0.98)) !important;
+    border-color: #cc99ff !important;
+}
+
+/* Si quieres que el título y el texto tengan un tono lila, puedes ajustarlo */
+body.pagina-biblioteca #modal-consejos h3 {
+    color: #cc99ff !important;   /* Título lila */
+}
+
+body.pagina-biblioteca .consejo-item {
+    background: rgba(204, 153, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* ==========================================
+   SLIDER DE CONSEJOS DENTRO DE LA MODAL
+   ========================================== */
+
+/* 1. Ocultamos los inputs de radio */
+.input-nav-consejos {
+    display: none !important;
+}
+
+/* 2. Contenedor de los consejos (slider) */
+.consejos-slider {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    margin: 15px 0;
+}
+
+/* 3. Cada consejo está oculto por defecto */
+.consejo-item {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    animation: fadeIn 0.3s ease;
+}
+
+/* 4. Animación suave al cambiar */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 5. Lógica de visibilidad: solo se muestra el consejo cuyo radio esté activo */
+#nav-1:checked ~ .consejos-slider .consejo-1,
+#nav-2:checked ~ .consejos-slider .consejo-2,
+#nav-3:checked ~ .consejos-slider .consejo-3,
+#nav-4:checked ~ .consejos-slider .consejo-4,
+#nav-5:checked ~ .consejos-slider .consejo-5 {
+    display: block !important;
+}
+
+/* 6. Contenedor de las flechas de navegación */
+.nav-consejos-botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    width: 100%;
+}
+
+/* 7. Ocultamos todas las flechas por defecto */
+.btn-ant, .btn-sig {
+    display: none !important;
+}
+
+/* 8. Lógica para mostrar solo la flecha correcta según el consejo activo */
+
+/* Flechas "Anterior" (Izquierda) */
+#nav-1:checked ~ .nav-consejos-botones .btn-ant-1,
+#nav-2:checked ~ .nav-consejos-botones .btn-ant-2,
+#nav-3:checked ~ .nav-consejos-botones .btn-ant-3,
+#nav-4:checked ~ .nav-consejos-botones .btn-ant-4,
+#nav-5:checked ~ .nav-consejos-botones .btn-ant-5 {
+    display: flex !important;
+}
+
+/* Flechas "Siguiente" (Derecha) */
+#nav-1:checked ~ .nav-consejos-botones .btn-sig-1,
+#nav-2:checked ~ .nav-consejos-botones .btn-sig-2,
+#nav-3:checked ~ .nav-consejos-botones .btn-sig-3,
+#nav-4:checked ~ .nav-consejos-botones .btn-sig-4,
+#nav-5:checked ~ .nav-consejos-botones .btn-sig-5 {
+    display: flex !important;
+}
+
+/* 9. Estilos del contenido del consejo */
+.consejo-item h4 {
+    color: #d4af37;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+.consejo-item p {
+    color: #f5f2eb;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Botón para abrir el libro de consejos */
+body.pagina-biblioteca .btn-abrir-consejos {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #7a3b8a;               /* Morado oscuro */
+    border: 2px solid #cc99ff;         /* Borde lila suave */
+    border-radius: 30px;
+    color: #ffffff;                    /* Texto blanco para legibilidad */
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+body.pagina-biblioteca .btn-abrir-consejos:hover {
+    background: #9b4faa;               /* Un morado más claro al pasar el mouse */
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(204, 153, 255, 0.6);
+}
+
+/* ==========================================
+   CONTENEDOR Y ESTILOS DEL BOTÓN + RADIO
+   ========================================== */
+
+/* Contenedor que alinea el botón y el radio lado a lado */
+.contenedor-boton-musica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+/* ==========================================
+   BOTÓN MORADO "Abrir el Libro de Consejos"
+   ========================================== */
+.btn-abrir-consejos {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #7a3b8a;               /* Fondo morado */
+    border: 2px solid #cc99ff;         /* Borde lila suave */
+    border-radius: 50px;               /* Forma de cápsula/píldora */
+    color: #ffffff;                    /* Letras blancas */
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por el botón */
+.btn-abrir-consejos:hover {
+    background: #9b4faa;               /* Morado un poco más claro */
+    border-color: #ffffff;
+    box-shadow: 0 0 25px rgba(204, 153, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   REPRODUCTOR DE MÚSICA (EL RADIO)
+   ========================================== */
+.contenedor-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Imagen del radio */
+.imagen-radio {
+    width: 100px;                      /* Ajusta este tamaño según tu imagen */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el radio (para que sepan que es interactivo) */
+.imagen-radio:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 20px rgba(204, 153, 255, 0.9));
+}
+
+/* Texto debajo del radio */
+.texto-radio {
+    color: #e0d0b0;
+    font-family: 'Cinzel', serif;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 15px;
+    border-radius: 12px;
+    border-left: 3px solid #cc99ff;
+}
+
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA "El Santuario"
+   ========================================== */
+
+body.pagina-santuario {
+    background-image: url('Imagenes/fondo4.jpg') !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Menú de navegación (bordes que combinen con el rojo) */
+body.pagina-santuario nav td {
+    border-color: #d4af37 !important;        /* Dorado clásico para que destaque */
+    background-color: rgba(10, 10, 14, 0.7) !important;
+}
+
+body.pagina-santuario nav td:hover {
+    border-color: #ff4444 !important;        /* Rojo brillante al pasar el mouse */
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.6) !important;
+}
+
+/* Títulos h2 (degradado rojo-dorado) */
+body.pagina-santuario h2 {
+    background: linear-gradient(to right, #f5f2eb, #ff4444, #d4af37) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Contenedor del santuario (fondo oscuro con bordes rojos) */
+body.pagina-santuario .santuario-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(10, 10, 14, 0.85);
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+}
+
+/* Enlaces de contacto (ítems dentro del santuario) */
+body.pagina-santuario .contacto-item {
+    display: block;
+    text-decoration: none;
+    color: #f5f2eb;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+body.pagina-santuario .contacto-item:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: #ff4444;                    /* Borde rojo al pasar el mouse */
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+    transform: scale(1.02);
+}
+
+body.pagina-santuario .contacto-item h3 {
+    color: #d4af37;
+    margin: 0;
+}
+
+body.pagina-santuario .contacto-item p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #e0d0b0;
+}
+
+/* ==========================================
+   ESTILOS EXCLUSIVOS PARA "Agenda del Templo"
+   ========================================== */
+
+body.pagina-agenda {
+    background-image: url('Imagenes/fondo2.jpg') !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Menú de navegación (bordes azules) */
+body.pagina-agenda nav td {
+    border-color: #4db8ff !important;        /* Azul menta suave */
+    background-color: rgba(10, 10, 14, 0.7) !important;
+}
+
+body.pagina-agenda nav td:hover {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(77, 184, 255, 0.6) !important;
+}
+
+/* Títulos h2 (degradado azul-dorado) */
+body.pagina-agenda h2 {
+    background: linear-gradient(to right, #f5f2eb, #4db8ff, #d4af37) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Contenedor de la agenda (fondo oscuro con bordes azules) */
+body.pagina-agenda .agenda-container {
+    border-color: rgba(77, 184, 255, 0.4) !important;
+    box-shadow: 0 15px 35px rgba(77, 184, 255, 0.1) !important;
+}
+
+/* Tabla de la agenda */
+body.pagina-agenda .agenda-tabla th {
+    background: rgba(77, 184, 255, 0.2) !important;
+    border-bottom: 2px solid #4db8ff !important;
+}
+
+body.pagina-agenda .agenda-tabla td {
+    border-bottom: 1px solid rgba(77, 184, 255, 0.1) !important;
+}
+
+body.pagina-agenda .hora-col {
+    color: #4db8ff !important;
+    border-right: 1px solid rgba(77, 184, 255, 0.2) !important;
+}
+
+/* Colores de disponibilidad (verde y rojo se mantienen, solo ajustamos el fondo sutil) */
+body.pagina-agenda .ocupado {
+    background: rgba(255, 107, 107, 0.05) !important;
+}
+
+/* Nota importante */
+body.pagina-agenda .nota-importante {
+    border-top: 1px solid rgba(77, 184, 255, 0.3) !important;
+}
